@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ccee66;
+    color: white;
+    padding: 20px 160px;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s;
+}
+
+body::before {
+    content: '';
+    background: rgb(36, 36, 36);
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    top: 0;
+    left: -700px;
+    transform: rotate(-70deg);
+}
+
+body::after {
+    content: 'Nike';
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 250px;
+    font-weight: bold;
+    opacity: 0.2;
+}
+
+.btn-AddCarinho {
+    background: #ccee66;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid rgb(221, 221, 221);
+}
+
+.btn-AddCarinho:hover {
+    opacity: 0.5;
+}
+
+.logo {
+    width: 80px;
+}
+
+.img1tenis {
+    width: 70vh;
+    transform: rotate(-20deg);
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+h4{
+   font-size: 30px; 
+}
+
+h1{
+font-size: 60px;
+}
+.box-texto {
+    font-size: 20px;
+    max-width: 500px;
+    text-align: justify;
+}
+
+.box-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+    position: relative;
+    z-index: 1;
+}
+
+.box-botoes {
+   display: flex;
+   gap: 15px;
+   position: relative;
+    z-index: 1;
+}
+
+.botoes {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid rgb(221, 221, 221);
+    
+}
+.botoes:hover{
+    top: -10px;
+    position: relative;
+    z-index: 1;
+}
+
+.botoes:active{
+    opacity: 0.5;
+}
+
+.verde {
+    background: #ccee66;
+}
+
+.azul {
+    background: #58cced;
+}
+
+.rosa {
+    background: #ff9eb5;
+}
